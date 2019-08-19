@@ -71,7 +71,7 @@ def findcar():
 def milplus():
   while True:
     print("---Mileage Add Interface---")
-    MilNUM = input("Arrival car number")
+    MilNUM = input("Arrival car number:")
     if MilNUM in TAXCARS:
       break
     else:
