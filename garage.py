@@ -37,7 +37,7 @@ def addcar():
     except ValueError:
       print("Only numbers")
   TAXCARS[TemporaryVariableCar] = {SPEC[0]:TemporaryVariableColor,SPEC[1]:TemporaryVariableModel,SPEC[2]:TemporaryVariableMil}
-
+  pickle.dump(TAXCARS,open(way1,'wb'))
 def delcar():
   passdel = input('Enter admin password:')
   if passdel == PASSWORD:
